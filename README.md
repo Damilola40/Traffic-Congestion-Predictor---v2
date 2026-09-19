@@ -1,4 +1,4 @@
-# Traffic Congestion Predictor
+# Traffic Congestion Predictor - v2
 
 A binary classifier that predicts whether traffic on major Lagos roads will be
 **Normal** or **Congested**, given the road, time, and weather conditions.
