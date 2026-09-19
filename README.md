@@ -15,7 +15,7 @@ a commuter can decide whether to leave early or take an alternate route.
 
 ## Dataset
 
-Initially it was a manually collected dataset of 248 rows taken across 7 days within fixed corridors using google maps which had a great imbalance of normal to congestion rate. Apython data generator was used to based on the initial dataset create more rows and bring about a balance to the data
+Initially it was a manually collected dataset of 248 rows taken across 7 days within fixed corridors using google maps which had a great imbalance of normal to congestion rate. Apython data generator was used to based on the initial dataset create more rows and bring about a balance to the data.
 `traffic_data_gen.csv` — 1,500 records across 8 major Lagos roads and
 expressways (Third Mainland Bridge, Lekki-Epe Expressway, Ikorodu Road, and
 others), each with a road, corridor, day, weather, temperature, rain
