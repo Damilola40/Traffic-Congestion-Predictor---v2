@@ -110,8 +110,10 @@ with col2:
     temperature = st.slider("temperature (°C)", 20.0, 31.0, 26.0, step=0.1)
     rain_chance = st.slider("Rain chance (%)", 0, 100, 0, step=5) / 100
 
+NIGERIA_TZ = datetime.timezone(datetime.timedelta(hours=1))
+
 def use_current_time():
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(NIGERIA_TZ)
     st.session_state["day"] = now.strftime("%A")
     st.session_state["obs_hour"] = now.hour
 
