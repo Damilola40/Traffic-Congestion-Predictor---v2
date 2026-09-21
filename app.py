@@ -5,7 +5,7 @@ from pathlib import Path
 import datetime
 
 # -----------------------------------------------------------------------
-# PAGE CONFIG
+# PAGE CONFIGURATION
 # -----------------------------------------------------------------------
 st.set_page_config(
     page_title="Traffic Congestion Predictor",
@@ -144,15 +144,11 @@ def hourly_forecast(model, base_input: dict) -> pd.DataFrame:
 # PREDICTION
 # -----------------------------------------------------------------------
 if predict_clicked:
-    # Column order doesn't matter — the pipeline's ColumnTransformer
-    # selects by name, not position.
     input_df = pd.DataFrame([{
         "road": road,
         "fixed_corridor": fixed_corridor,
         "day": day,
         "weather": weather,
-        #"traffic_pattern": traffic_pattern,
-        #"congestion_location": congestion_location,
         "temperature": temperature,
         "rain_chance": rain_chance,
         "obs_hour": obs_hour,
